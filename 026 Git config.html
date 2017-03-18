@@ -1,25 +1,39 @@
-<!DOCTYPE html>
-<html>
-<head>
-<meta charset="UTF-8">
-<title>026 Git config</title>
-</head>
-<body>
-<div class="asset-container">
-    <div class="asset-container__padding article-view">
-        <div class="w3c-default">
-            <p>$ git config --global user.email "YOUREMAIL"</p><p>$ git config<br>usage: git config [&lt;options&gt;]</p>
+$ git config --global user.email "YOUREMAIL"
 
-<p>Config file location<br>    --global              use global config file<br>    --system              use system config file<br>    --local               use repository config file<br>    -f, --file &lt;file&gt;     use given config file<br>    --blob &lt;blob-id&gt;      read config from given blob object</p>
+$ git config
+usage: git config [<options>]
 
-<p>Action<br>    --get                 get value: name [value-regex]<br>    --get-all             get all values: key [value-regex]<br>    --get-regexp          get values for regexp: name-regex [value-regex]<br>    --get-urlmatch        get value specific for the URL: section[.var] URL<br>    --replace-all         replace all matching variables: name value [value_regex]<br>    --add                 add a new variable: name value<br>    --unset               remove a variable: name [value-regex]<br>    --unset-all           remove all matches: name [value-regex]<br>    --rename-section      rename section: old-name new-name<br>    --remove-section      remove a section: name<br>    -l, --list            list all<br>    -e, --edit            open an editor<br>    --get-color           find the color configured: slot [default]<br>    --get-colorbool       find the color setting: slot [stdout-is-tty]</p>
+Config file location
+    --global              use global config file
+    --system              use system config file
+    --local               use repository config file
+    -f, --file <file>     use given config file
+    --blob <blob-id>      read config from given blob object
 
-<p>Type<br>    --bool                value is "true" or "false"<br>    --int                 value is decimal number<br>    --bool-or-int         value is --bool or --int<br>    --path                value is a path (file or directory name)</p>
+Action
+    --get                 get value: name [value-regex]
+    --get-all             get all values: key [value-regex]
+    --get-regexp          get values for regexp: name-regex [value-regex]
+    --get-urlmatch        get value specific for the URL: section[.var] URL
+    --replace-all         replace all matching variables: name value [value_regex]
+    --add                 add a new variable: name value
+    --unset               remove a variable: name [value-regex]
+    --unset-all           remove all matches: name [value-regex]
+    --rename-section      rename section: old-name new-name
+    --remove-section      remove a section: name
+    -l, --list            list all
+    -e, --edit            open an editor
+    --get-color           find the color configured: slot [default]
+    --get-colorbool       find the color setting: slot [stdout-is-tty]
 
-<p>Other<br>    -z, --null            terminate values with NUL byte<br>    --name-only           show variable names only<br>    --includes            respect include directives on lookup<br>    --show-origin         show origin of config (file, standard input, blob, command line)</p>
-        </div>
-    </div>
-</div>
+Type
+    --bool                value is "true" or "false"
+    --int                 value is decimal number
+    --bool-or-int         value is --bool or --int
+    --path                value is a path (file or directory name)
 
-</body>
-</html>
+Other
+    -z, --null            terminate values with NUL byte
+    --name-only           show variable names only
+    --includes            respect include directives on lookup
+    --show-origin         show origin of config (file, standard input, blob, command line)
